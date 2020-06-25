@@ -48,7 +48,7 @@ Windows 専用 API やプラットフォーム非依存 API など、約 20,000 
 
 2. .NET Core または .NET Standard に既存のコードを移植するとき、[Microsoft.Windows.Compatibility NuGet パッケージ](https://www.nuget.org/packages/Microsoft.Windows.Compatibility)をインストールします。
 
-   Windows に留まる場合、すでに用意はできています。
+   Windows のみで使い続ける場合は、これで完了です。
 
 3. .NET Core アプリケーションまたは .NET Standard ライブラリを Linux または macOS で実行する場合、[API Analyzer](../../standard/analyzers/api-analyzer.md) を使用し、プラットフォーム非依存で機能しない API の使用を見つけます。
 
