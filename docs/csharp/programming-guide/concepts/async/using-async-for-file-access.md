@@ -78,7 +78,7 @@ await theTask;
  最初のステートメントはタスクを返し、ファイル処理を開始します。 await が含まれた 2 番目のステートメントによって、メソッドが直ちに終了し、別のタスクを返します。 ファイル処理が完了すると、await の後のステートメントに実行が戻ります。 詳細については、「[非同期プログラムにおける制御フロー (C#)](./control-flow-in-async-programs.md)」を参照してください。  
   
 ## <a name="reading-text"></a>テキストの読み取り  
- 次の例では、ファイルからテキストを読み取ります。 テキストはバッファーに格納されます。この例では <xref:System.Text.StringBuilder> に配置されます。 前の例と異なり、await の評価で値が生成されます。 <xref:System.IO.Stream.ReadAsync%2A> メソッドによって <xref:System.Threading.Tasks.Task>\<<xref:System.Int32> が返されます。処理の完了後、await の評価によって `Int32` 値 (`numRead`) が生成されます。 詳しくは、「[非同期の戻り値の型 (C#)](./async-return-types.md)」をご覧ください。  
+ 次の例では、ファイルからテキストを読み取ります。 テキストはバッファーに格納されます。この例では <xref:System.Text.StringBuilder> に配置されます。 前の例と異なり、await の評価で値が生成されます。 <xref:System.IO.Stream.ReadAsync%2A> メソッドによって <xref:System.Threading.Tasks.Task>\<<xref:System.Int32>> が返されます。処理の完了後、await の評価によって `Int32` 値 (`numRead`) が生成されます。 詳しくは、「[非同期の戻り値の型 (C#)](./async-return-types.md)」をご覧ください。  
   
 ```csharp  
 public async Task ProcessReadAsync()  
